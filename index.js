@@ -8,12 +8,6 @@ app.post('/', async(req, res) => {
   if (!data) {
     return res.status(404).send({msg:"Please Gave Data"})
   }
-  /*let driver =  new webdriver.Builder() 
-  .forBrowser("chrome").build(); 
-  driver.get("https://www.mca.gov.in/content/mca/global/en/home.html");
-  let result=await driver.executeScript(`return encrypt('${data}')`)
-  res.send({data:result})
-  driver.close()*/
   res.send({msg:data})
 })
 
